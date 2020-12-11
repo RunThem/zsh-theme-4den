@@ -1,2 +1,2 @@
 # zsh-theme-4den
-Custom theme
+My personal ZSH theme, based on 3den
