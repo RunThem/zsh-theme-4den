@@ -11,5 +11,5 @@ function color {
 	echo "%{$fg_bold[$1]%}$2%{$reset_color%}"
 }
 
-PROMPT=$'$(color red ┌─)$(color $([[ $? != 0 ]] && echo "red" || echo "${HOST_NAME_COLOR}") %n) $(color ${TIME_COLOR} %D{%I:%M:%S}) $(color ${DIR_COLOR} %~) $(git_prompt_info)$(hg_prompt_info)
+PROMPT=$'$(color red ┌─) $(color $([[ $? != 0 ]] && echo "red" || echo "${USER_NAME_COLOR}") %n) $(color ${TIME_COLOR} %D{%I:%M:%S}) $(color ${DIR_COLOR} %~) $(git_prompt_info)$(hg_prompt_info)
 $(color red └──)$(color yellow »)'
