@@ -11,5 +11,5 @@ local c_user_host="green"
 local c_time="yellow"
 local c_dir="cyan"
 
-PROMPT=$'$(color red ╭─) $(color ${c_user_host} %n) $(color ${c_time} %D{%I:%M:%S}) $(color ${c_dir} %~) $(git_prompt_info)$(hg_prompt_info)
+PROMPT=$'$(color red ╭─) $(color ${c_user_host} %n) $(color ${c_time} %D{%I:%M:%S}) $(color ${c_dir} %3~) $(git_prompt_info)$(hg_prompt_info)
 $(color red ╰─) '
